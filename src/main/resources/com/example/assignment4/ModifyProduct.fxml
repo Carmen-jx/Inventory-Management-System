@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml" fx:controller="com.example.assignment4.controller.ModifyProductController">
+    <children>
+        <Label text="Modify Product" layoutX="20.0" layoutY="14.0"/>
+
+        <VBox layoutX="20.0" layoutY="40.0">
+            <children>
+                <Label text="ID"/>
+                <TextField fx:id="productIdField" promptText="Auto Gen - Disabled" editable="false"/>
+
+                <Label text="Name"/>
+                <TextField fx:id="productNameField"/>
+
+                <Label text="Inv"/>
+                <TextField fx:id="productInventoryField"/>
+
+                <Label text="Price/Cost"/>
+                <TextField fx:id="productPriceField"/>
+
+                <HBox>
+                    <children>
+                        <VBox>
+                            <children>
+                                <Label text="Max"/>
+                                <TextField fx:id="productMaxField"/>
+                            </children>
+                        </VBox>
+                        <VBox>
+                            <children>
+                                <Label text="Min"/>
+                                <TextField fx:id="productMinField"/>
+                            </children>
+                        </VBox>
+                    </children>
+                </HBox>
+            </children>
+        </VBox>
+
+        <Label text="Parts" layoutX="300.0" layoutY="14.0"/>
+        <TextField fx:id="partSearchField" promptText="Search by Part ID or Name" layoutX="300.0" layoutY="40.0"/>
+
+        <TableView fx:id="allPartsTable" layoutX="300.0" layoutY="70.0">
+            <columns>
+                <TableColumn fx:id="partIdCol" text="Part ID"/>
+                <TableColumn fx:id="partNameCol" text="Part Name"/>
+                <TableColumn fx:id="partInventoryCol" text="Inventory Level"/>
+                <TableColumn fx:id="partPriceCol" text="Price/Cost per Unit"/>
+            </columns>
+        </TableView>
+        <Button text="Add" layoutX="700.0" layoutY="150.0"/>
+
+
+
+        <TableView fx:id="associatedPartsTable" layoutX="300.0" layoutY="200.0">
+            <columns>
+                <TableColumn fx:id="associatedPartIdCol" text="Part ID"/>
+                <TableColumn fx:id="associatedPartNameCol" text="Part Name"/>
+                <TableColumn fx:id="associatedPartInventoryCol" text="Inventory Level"/>
+                <TableColumn fx:id="associatedPartPriceCol" text="Price/Cost per Unit"/>
+            </columns>
+        </TableView>
+
+        <Button text="Remove Associated Part" layoutX="700.0" layoutY="300.0"/>
+
+        <Button text="Save" layoutX="20.0" layoutY="350.0" />
+        <Button text="Cancel" layoutX="80.0" layoutY="350.0" />
+    </children>
+</AnchorPane>

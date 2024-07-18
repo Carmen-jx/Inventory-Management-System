@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml" fx:controller="com.example.assignment4.controller.AddPartController">
+    <children>
+        <Label text="Add Part" layoutX="20.0" layoutY="14.0"/>
+
+        <RadioButton fx:id="inHouseRadioButton" text="In-House" layoutX="20.0" layoutY="40.0"/>
+        <RadioButton fx:id="outsourcedRadioButton" text="Outsourced" layoutX="100.0" layoutY="40.0"/>
+
+        <VBox layoutX="20.0" layoutY="70.0">
+            <children>
+                <Label text="ID"/>
+                <TextField fx:id="partIdField" promptText="Auto Gen - Disabled" editable="false"/>
+
+                <Label text="Name"/>
+                <TextField fx:id="partNameField"/>
+
+                <Label text="Inv"/>
+                <TextField fx:id="partInventoryField"/>
+
+                <Label text="Price/Cost"/>
+                <TextField fx:id="partPriceField"/>
+
+                <HBox>
+                    <children>
+                        <VBox>
+                            <children>
+                                <Label text="Max"/>
+                                <TextField fx:id="partMaxField"/>
+                            </children>
+                        </VBox>
+                        <VBox>
+                            <children>
+                                <Label text="Min"/>
+                                <TextField fx:id="partMinField"/>
+                            </children>
+                        </VBox>
+                    </children>
+                </HBox>
+
+                <Label fx:id="companyOrMachineLabel" text="Machine ID"/>
+                <TextField fx:id="companyOrMachineField"/>
+            </children>
+        </VBox>
+
+        <Button text="Save" layoutX="20.0" layoutY="350.0"/>
+        <Button text="Cancel" layoutX="80.0" layoutY="350.0"/>
+    </children>
+</AnchorPane>

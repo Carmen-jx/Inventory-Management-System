@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane prefHeight="431.0" prefWidth="595.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.assignment4.controller.ModifyPartController">
+   <children>
+      <Label layoutX="14.0" layoutY="17.0" text="Modify Part" />
+      <HBox layoutX="22.0" layoutY="61.0" prefHeight="268.0" prefWidth="349.0">
+         <children>
+            <AnchorPane prefHeight="317.0" prefWidth="333.0">
+               <children>
+                  <VBox prefHeight="340.0" prefWidth="63.0" spacing="20.0">
+                     <children>
+                        <Label prefHeight="27.0" prefWidth="44.0" text="Label 1" />
+                        <Label prefHeight="26.0" prefWidth="46.0" text="Label 2" />
+                        <Label prefHeight="26.0" prefWidth="44.0" text="Label 3" />
+                        <Label prefHeight="26.0" prefWidth="46.0" text="Label 4" />
+                        <Label prefHeight="26.0" prefWidth="48.0" text="Label 5" />
+                        <Label prefHeight="25.0" prefWidth="46.0" text="Label 6" />
+                     </children>
+                  </VBox>
+                  <VBox layoutX="64.0" layoutY="-1.0" prefHeight="266.0" prefWidth="156.0" spacing="20.0">
+                     <children>
+                        <TextField prefHeight="20.0" prefWidth="269.0" />
+                        <TextField />
+                        <TextField />
+                        <TextField prefHeight="26.0" prefWidth="113.0" />
+                        <TextField />
+                        <TextField prefHeight="2.0" prefWidth="262.0" />
+                     </children>
+                  </VBox>
+                  <Label layoutX="236.0" layoutY="190.0" text="Label" />
+               </children>
+            </AnchorPane>
+         </children>
+      </HBox>
+      <TextField layoutX="312.0" layoutY="249.0" />
+      <HBox layoutX="90.0" layoutY="7.0" prefHeight="35.0" prefWidth="216.0" spacing="20.0">
+         <children>
+            <RadioButton mnemonicParsing="false" text="RadioButton" />
+            <RadioButton mnemonicParsing="false" text="RadioButton" />
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

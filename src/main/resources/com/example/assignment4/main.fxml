@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml" fx:controller="com.example.assignment4.controller.MainScreenController">
+    <children>
+        <Label text="Inventory Management System (Your ID)" layoutX="20.0" layoutY="14.0"/>
+
+        <HBox layoutX="20.0" layoutY="50.0">
+            <children>
+                <VBox>
+                    <children>
+                        <Label text="Parts"/>
+                        <TableView fx:id="partsTable">
+                            <columns>
+                                <TableColumn fx:id="partIdCol" text="Part ID"/>
+                                <TableColumn fx:id="partNameCol" text="Part Name"/>
+                                <TableColumn fx:id="partInventoryCol" text="Inventory Level"/>
+                                <TableColumn fx:id="partPriceCol" text="Price/Cost per Unit"/>
+                            </columns>
+                        </TableView>
+                        <TextField fx:id="partSearchField" promptText="Search by Part ID or Name"/>
+                        <HBox>
+                            <children>
+                                <Button text="Add"/>
+                                <Button text="Modify" />
+                                <Button text="Delete" />
+                            </children>
+                        </HBox>
+                    </children>
+                </VBox>
+                <VBox>
+                    <children>
+                        <Label text="Products"/>
+                        <TableView fx:id="productsTable">
+                            <columns>
+                                <TableColumn fx:id="productIdCol" text="Product ID"/>
+                                <TableColumn fx:id="productNameCol" text="Product Name"/>
+                                <TableColumn fx:id="productInventoryCol" text="Inventory Level"/>
+                                <TableColumn fx:id="productPriceCol" text="Price/Cost per Unit"/>
+                            </columns>
+                        </TableView>
+                        <TextField fx:id="productSearchField" promptText="Search by Product ID or Name"/>
+                        <HBox>
+                            <children>
+                                <Button text="Add "/>
+                                <Button text="Modify" />
+                                <Button text="Delete"/>
+                            </children>
+                        </HBox>
+                    </children>
+                </VBox>
+            </children>
+        </HBox>
+
+        <Button text="Exit" layoutX="370.0" layoutY="350.0"/>
+    </children>
+</AnchorPane>
